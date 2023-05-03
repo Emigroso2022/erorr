@@ -1,4 +1,5 @@
-const Item = ({ id, name, img,category , description ,price, stock }) => {
+const Item = ({ id, name, img, category , description ,price, stock }) => {
+    
     return (
         <article className="CadItem">
             <header className="Headere">
