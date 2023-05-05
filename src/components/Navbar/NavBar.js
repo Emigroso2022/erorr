@@ -1,18 +1,21 @@
 import Button from 'react-bootstrap/Button';
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink, Link } from 'react-router-dom';
 
-const NavBar =() =>{
-    return(
-        <nav>
-            <h3>Ecommerce</h3>
-            <div>
-               
-               <NvarLink to ={'/category/Alimentos'} className={({isActive}) => isActive ? 'ActiveOption' :'Option'}>Alimentos</NvarLink>
-               <NvarLink to ={'/category/Bazar'} className={({isActive}) => isActive ? 'ActiveOption' :'Option'}>Bazar</NvarLink>
-               <NvarLink to ={'/category/Limpiza'} className={({isActive}) => isActive ? 'ActiveOption' :'Option'}>Limpieza</NvarLink>
-               <NvarLink to ={'/category/Tecnologia'} className={({isActive}) => isActive ? 'ActiveOption' :'Option'}>Tecnologia</NvarLink>
+const NavBar = () => {
+    return (
+        <nav className='Navbar'>
+
+            <link to='/'>
+                <h3>Ecommerce</h3>
+            </link>
+            <div className='Categorias'>
+                <NavLink to={'/category/Limpieza'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Limpieza</NavLink>
+                <NavLink to={'/category/Bazar'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Bazar</NavLink>
+                <NavLink to={'/category/Alimientos'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Alimientos</NavLink>
+
             </div>
-       <CartWidget/>
+            <CartWidget />
         </nav>
     )
 }

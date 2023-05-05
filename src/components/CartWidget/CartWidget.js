@@ -5,7 +5,6 @@ return(
     <div>
 <img src={cart} alt="cart-Widget"/>
 0
-
     </div>
 )
 

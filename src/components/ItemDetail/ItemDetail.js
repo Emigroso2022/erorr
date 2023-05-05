@@ -1,5 +1,12 @@
-const Item = ({ id, name, img, category , description ,price, stock }) => {
+//import { useState } from "react"
+import ItemCount from "../ItemCount/ItemCount"
+//import { Link } from "react-router-dom"
+
+
+
+const ItemDetail = ({ id, name, img, category , description ,price, stock }) => {
     
+
     return (
         <article className="CadItem">
             <header className="Headere">
@@ -25,4 +32,4 @@ const Item = ({ id, name, img, category , description ,price, stock }) => {
     )
 }
 
-export default Item
+export default ItemDetail
